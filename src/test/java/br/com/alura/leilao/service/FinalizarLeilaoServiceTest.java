@@ -27,7 +27,7 @@ public class FinalizarLeilaoServiceTest {
 
     @BeforeEach
     public void beforeEach() {
-        MockitoAnnotations.openMocks(this);
+        MockitoAnnotations.initMocks(this);
         this.service = new FinalizarLeilaoService(leilaoDao, enviadorDeEmails);
     }
 
